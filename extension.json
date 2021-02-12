@@ -1,0 +1,74 @@
+{
+  "displayName": "Charlie Test",
+  "name": "charlie-test",
+  "platform": "web",
+  "version": "0.1.0",
+  "description": "Just playing around with reactor-scaffold :)",
+  "author": {
+    "name": "tyssejc"
+  },
+  "viewBasePath": "src/view/",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "sharedModules": [
+    {
+      "name": "analytics",
+      "libPath": "src/lib/sharedModules/analytics.js"
+    }
+  ],
+  "events": [
+    {
+      "displayName": "Test Event",
+      "name": "test-event",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/events/testEvent.js"
+    }
+  ],
+  "conditions": [
+    {
+      "displayName": "Test Condition",
+      "name": "test-condition",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/conditions/testCondition.js"
+    }
+  ],
+  "actions": [
+    {
+      "displayName": "Test Action",
+      "name": "test-action",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/actions/testAction.js",
+      "viewPath": "actions/testAction.html"
+    }
+  ],
+  "dataElements": [
+    {
+      "displayName": "Test Data Element",
+      "name": "test-data-element",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/dataElements/testDataElement.js"
+    }
+  ]
+}

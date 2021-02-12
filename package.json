@@ -1,0 +1,14 @@
+{
+  "name": "ext-dev",
+  "version": "0.1.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tyssejc",
+  "license": "ISC",
+  "devDependencies": {
+    "@adobe/reactor-sandbox": "^10.7.1"
+  }
+}

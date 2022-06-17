@@ -1,12 +1,9 @@
-
-
 module.exports = {
   rules: [
     // Set up rules that you would like to test. For each event/condition/action:
     //  - modulePath is the name of your extension (as defined in your extension.json) plus the
     //    path to the library module file.
     //  - settings is an object containing user input saved from your extension view.
-
     // {
     //   name: 'Example Rule',
     //   events: [
@@ -40,7 +37,6 @@ module.exports = {
     //  - modulePath is the name of your extension (as defined in your extension.json) plus the
     //    path to the library module file.
     //  - settings is an object containing user input saved from your extension view.
-
     // productId: {
     //   // This is a simple data element type provided by the sandbox which retrieves a value
     //   // from local storage. This data element type is provided as a convenience in case
@@ -55,7 +51,6 @@ module.exports = {
   extensions: {
     // Set up an extension configuration you would like to test. The top-level object key is the
     // name of your extension (as defined in your extension.json).
-
     // 'example-extension': {
     //   displayName: 'Example Extension',
     //   settings: {}
@@ -67,19 +62,19 @@ module.exports = {
   property: {
     name: 'Sandbox property',
     settings: {
-      domains: [
-        'adobe.com',
-        'example.com'
-      ],
-      linkDelay: 100,
-      trackingCookieName: 'sat_track',
+      id: 'PR12345',
+      domains: ['adobe.com', 'example.com'],
       undefinedVarsReturnEmpty: false
     }
   },
   buildInfo: {
-    turbineVersion: '14.0.0',
-    turbineBuildDate: '2016-07-01T18:10:34Z',
-    buildDate: '2016-08-01T12:10:33Z',
-    environment: 'development'
+    turbineVersion: '27.2.0',
+    turbineBuildDate: '2021-08-11T20:25:49Z',
+    buildDate: '2022-01-01T12:10:33Z',
+    environment: 'development' // deprecated, use environment block instead
+  },
+  environment: {
+    id: 'EN00000000000000000000000000000000',
+    stage: 'development'
   }
 };
